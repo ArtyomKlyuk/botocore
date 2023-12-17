@@ -809,7 +809,6 @@
       "output":{"shape":"GetResourceConfigHistoryResponse"},
       "errors":[
         {"shape":"ValidationException"},
-        {"shape":"InvalidTimeRangeException"},
         {"shape":"InvalidLimitException"},
         {"shape":"InvalidNextTokenException"},
         {"shape":"NoAvailableConfigurationRecorderException"},
@@ -4465,13 +4464,6 @@
       "members":{
       },
       "documentation":"<p>The specified Amazon SNS topic does not exist.</p>",
-      "exception":true
-    },
-    "InvalidTimeRangeException":{
-      "type":"structure",
-      "members":{
-      },
-      "documentation":"<p>The specified time range is not valid. The earlier time is not chronologically before the later time.</p>",
       "exception":true
     },
     "LastDeliveryChannelDeleteFailedException":{

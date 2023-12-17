@@ -191,7 +191,6 @@
       "input":{"shape":"ListPublicKeysRequest"},
       "output":{"shape":"ListPublicKeysResponse"},
       "errors":[
-        {"shape":"InvalidTimeRangeException"},
         {"shape":"UnsupportedOperationException"},
         {"shape":"OperationNotPermittedException"},
         {"shape":"InvalidTokenException"}
@@ -244,7 +243,6 @@
       "output":{"shape":"LookupEventsResponse"},
       "errors":[
         {"shape":"InvalidLookupAttributesException"},
-        {"shape":"InvalidTimeRangeException"},
         {"shape":"InvalidMaxResultsException"},
         {"shape":"InvalidNextTokenException"},
         {"shape":"InvalidEventCategoryException"},
@@ -1085,13 +1083,6 @@
       "members":{
       },
       "documentation":"<p>This exception is thrown when the specified tag key or values are not valid. It can also occur if there are duplicate tags or too many tags on the resource.</p>",
-      "exception":true
-    },
-    "InvalidTimeRangeException":{
-      "type":"structure",
-      "members":{
-      },
-      "documentation":"<p>Occurs if the timestamp values are invalid. Either the start time occurs after the end time or the time range is outside the range of possible values.</p>",
       "exception":true
     },
     "InvalidTokenException":{
